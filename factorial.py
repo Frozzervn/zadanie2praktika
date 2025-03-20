@@ -1,11 +1,12 @@
 # factorial.py
-def factorial(n):
-    if n < 0:
-        raise ValueError("Факториал не определен для отрица чисел.")
-    elif n == 0 or n == 1:
+
+from math import factorial
+
+
+def fact(x):
+    if x == 0:
         return 1
-    else:
-        result = 1
-        for i in range(2, n + 1):
-            result *= i
-        return result
+    return factorial(x)
+
+
+print(fact(0))
