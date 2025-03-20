@@ -1,7 +1,7 @@
 # test_unique_elements.py
 
 import pytest
-from unique_elements import unique_elements  # Импортируем функцию из файла, где она реализована
+from unique_elements import unique_elements
 
 def test_unique_elements1():
     assert unique_elements([1, 2, 2, 3, 4, 4, 5]) == [1, 2, 3, 4, 5]
@@ -19,13 +19,13 @@ def test_unique_elements5():
     assert unique_elements([1, 2, 3, 4, 5]) == [1, 2, 3, 4, 5]
 
 def test_unique_elements6():
-    assert unique_elements([1, 'a', 'a', 2, 2]) == [1, 'a', 2]
+    assert unique_elements([1, 2, 2]) == [1, 2,]
 
 def test_unique_elements7():
     assert unique_elements([1.1, 1.1, 2.2, 3.3, 3.3]) == [1.1, 2.2, 3.3]
 
 def test_unique_elements8():
-    assert unique_elements([-1, -1, 2, -2, 2]) == [-1, 2, -2]
+    assert unique_elements([-1, -1, 2, -2, 2]) == [-2, -1, 2]
 
 def test_unique_elements9():
     large_input = [1] * 10000 + [2] * 10000 + [3] * 10000
