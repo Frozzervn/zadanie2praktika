@@ -32,7 +32,7 @@ def test_unique_elements9():
     assert unique_elements(large_input) == [1, 2, 3]
 
 def test_unique_elements10():
-    assert unique_elements(['apple', 'banana', 'apple', 'orange']) == ['apple', 'banana', 'orange']
+    assert unique_elements(['apple', 'banan', 'apple', 'orange']) == ['apple', 'banan', 'orange']
 
 # Запуск тестов
 if __name__ == "__main__":
