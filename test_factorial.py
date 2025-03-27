@@ -22,7 +22,7 @@ def test_factorial_five():
     assert factorial(5) == 120
 
 def test_factorial_negative():
-    with pytest.raises(ValueError, match="Факториал не опред для отриц чисел."):
+    with pytest.raises(ValueError, match="Факториал не определён для отрицательных чисел."):
         factorial(-1)
 
 def test_factorial_large_number():
